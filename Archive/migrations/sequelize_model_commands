@@ -1,0 +1,61 @@
+sequelize model:create --name files --attributes file_name:string
+sequelize model:create --name text_annotations --attributes file_id:integer,locale:string,description:string
+sequelize model:create --name text_fulltext_annotations --attributes file_id:integer,text:string
+sequelize model:create --name text_label_annotations --attributes file_id:integer,mid:string,description:string,score:string,topicality:string
+sequelize model:create --name t_text_bound_points --attributes text_ann_id:integer,point_x:string,point_y:string
+sequelize model:create --name audios --attributes file_id:integer,transcript:string,confidence:string
+sequelize model:create --name video_detect_texts --attributes file_id:integer,text:string,confidence:string
+sequelize model:create --name image_logo_annotations --attributes file_id:integer,mid:string,description:string
+sequelize model:create --name  t_text_logo_bound_points --attributes img_logo_ann_id:integer,point_x:string,point_y:string
+sequelize model:create --name  video_track_objects --attributes file_id:integer,description:string,confidence:string
+sequelize model:create --name  nlp_analyze_entity_sentiment --attributes file_id:integer,name:string,type:string,salience:string
+sequelize model:create --name  n_analyze_sentiment_sentence_data --attributes analyze_sentiment_id:integer,text:string
+sequelize model:create --name  nlp_analyze_syntax --attributes file_id:integer,text:string,tag:string,mood:string,number:string,person:string,tense:string,aspect:string,case:string,form:string,gender:string,proper:string,reciprocity:string,voice:string,lemma:string
+sequelize model:create --name  nlp_analyze_sentiment --attributes file_id:integer,magnitude:string,score:string
+
+nlp_analyze_sentiment
+
+sequelize model:create --name  adv_breaches --attributes file_name:string,entity_name:string,product_type:string,medium_type:string,rule_id:string,isBreached:string
+sequelize model:create --name  ads --attributes file_name:string,medium_type:string,publication_name:string,entity_name:string,entity_type:string,pro_or_service_type:string
+sequelize model:create --name  master_credit_lic_201907 --attributes register_name:string,credit_lic_num:string,credit_lic_name:string,credit_lic_start_dt:string,credit_lic_end_dt:string,credit_lic_status:string,credit_lic_abn_acn:string,credit_lic_afsl_num:string,credit_lic_status_history:string,credit_lic_locality:string,credit_lic_state:string,credit_lic_pcode:string,credit_lic_lat:string,credit_lic_lng:string,credit_lic_edrs:string,credit_lic_bn:string,credit_lic_authorisations:string
+
+
+sequelize model:create --name  text_coverage_area --attributes file_name:string,word_area:string,img_area:string,text_coverage:string,text_details:string
+
+sequelize model:create --name image_attributes --attributes image_name:string,mode:string,format:string,palette:string,info:string
+
+
+
+
+
+by chetan 
+sequelize model:create --name compony --attributes compony_name:string,acn:string,abn:string,type:string,class:string,sub_class:string,registration_date:string
+
+
+
+
+
+
+
+
+
+
+sequelize model:create --name master_credit_rep_201907 --attributes register_name:string,cred_rep_no:string,cred_lic_no:string,cred_rep_name:string
+
+sequelize model:create --name master_afs_lic_201907s --attributes register_name:string,afs_lic_no:string,afs_lic_name:string,afs_lic_abn_acn:string,afs_lic_start_dt:string,afs_lic_pre_fsr:string,afs_lic_add_local:string,afs_lic_add_state:string,afs_lic_add_pcode:string,afs_lic_add_country:string,afs_lic_lat:string,afs_lic_lng:string,afs_lic_condition:string
+
+
+
+
+sequelize model:create --name weekly_map_data --attributes Postcode_State:string,799:string,799_pct:string,800_1499:string,800_1499_pct:string,1500_2999:string,1500_2999_pct:string,3000_or_more:string,3000_pct:string,Not_stated:string,Not_applicable:string,NA_NS:string,NA_NS_pct:string,Total:string
+
+sequelize model:create --name labour_status --attributes Postcode_State:string,Employed_full_part_away:string,Employed_full_part_away_pct:string,Unemployed_pct:string,NS_NA_NILA:string,NS_NA_NILA_pct:string,Total:string
+
+
+
+
+
+sequelize model:create --name nsw_qld --attributes Postcode_State:string,0_19:string,0_19_pct:string,20_39:string,20_39_pct:string,40_59:string,40_59_pct:string,60_plus:string,60_plus_pct:string,Total:string
+
+
+sequelize model:create --name indigious --attributes Postcode_State:string,Non_Indigenous:string,Non_Indigenous_pct:string,AB_TI_Both:string,AB_TI_Both_pct:string,Not_stated:string,Total:string

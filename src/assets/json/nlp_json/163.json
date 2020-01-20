@@ -1,0 +1,1850 @@
+[
+    {
+        "analyze_sentiment": {
+            "document_sentiment": {
+                "magnitude": 0.800000011920929,
+                "score": 0.20000000298023224
+            },
+            "sentences_data": [
+                {
+                    "text": "SELECT HOME LOANS ARE AT AN ALL TIME LOW Talk to an expert today!"
+                },
+                {
+                    "text": "MORTGA ACL 378086 Specialising in Home & Investment Loan Refinance Options (Available NOW) Call us for smart information regarding tailoring your home loan to suit your individual needs..."
+                },
+                {
+                    "text": "3227597-9 Discounted Home Loan rates from 3.79% 9528 1420 Mark Devenny loans@selectmortgages.com.au Concions apply"
+                }
+            ]
+        },
+        "analyze_entities": [
+            {
+                "mentions_data": [
+                    {
+                        "text": "HOME LOANS",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "HOME LOANS",
+                "type": "OTHER",
+                "salience": 0.40733256936073303
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "expert",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "expert",
+                "type": "PERSON",
+                "salience": 0.12901678681373596
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "ALL TIME LOW",
+                        "type": "PERSON"
+                    }
+                ],
+                "name": "ALL TIME LOW",
+                "type": "OTHER",
+                "salience": 0.07745549082756042
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Home",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "Home",
+                "type": "OTHER",
+                "salience": 0.05719175934791565
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "home loan",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "home loan",
+                "type": "OTHER",
+                "salience": 0.05318315327167511
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Investment Loan Refinance Options",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "Investment Loan Refinance Options",
+                "type": "OTHER",
+                "salience": 0.0433601476252079
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "NOW",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "NOW",
+                "type": "OTHER",
+                "salience": 0.0433601476252079
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "ACL",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "ACL",
+                "type": "OTHER",
+                "salience": 0.042836230248212814
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "information",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "information",
+                "type": "OTHER",
+                "salience": 0.039821408689022064
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "MORTGA",
+                        "type": "PERSON"
+                    }
+                ],
+                "name": "SELECT MORTGAGE SERVICES",
+                "type": "ORGANIZATION",
+                "salience": 0.03759019449353218
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Home Loan rates",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "Home Loan rates",
+                "type": "OTHER",
+                "salience": 0.029938140884041786
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "needs",
+                        "type": "LOCATION"
+                    }
+                ],
+                "name": "needs",
+                "type": "OTHER",
+                "salience": 0.013249066658318043
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Concions",
+                        "type": "PERSON"
+                    }
+                ],
+                "name": "Concions",
+                "type": "OTHER",
+                "salience": 0.013225961476564407
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Mark Devenny",
+                        "type": "PERSON"
+                    }
+                ],
+                "name": "Mark Devenny",
+                "type": "PERSON",
+                "salience": 0.012438937090337276
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "9",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "9",
+                "type": "NUMBER",
+                "salience": 0.0
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "3.79",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "3.79",
+                "type": "NUMBER",
+                "salience": 0.0
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "9528",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "9528",
+                "type": "NUMBER",
+                "salience": 0.0
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "1420",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "1420",
+                "type": "NUMBER",
+                "salience": 0.0
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "3227597",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "3227597",
+                "type": "NUMBER",
+                "salience": 0.0
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "378086",
+                        "type": "UNKNOWN"
+                    }
+                ],
+                "name": "378086",
+                "type": "NUMBER",
+                "salience": 0.0
+            }
+        ],
+        "analyze_syntax": {
+            "tokens_data": [
+                {
+                    "text": "SELECT",
+                    "part_of_speech": {
+                        "tag": "ADJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 2,
+                        "label": 5
+                    },
+                    "lemma": "SELECT"
+                },
+                {
+                    "text": "HOME",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 2,
+                        "label": 26
+                    },
+                    "lemma": "HOME"
+                },
+                {
+                    "text": "LOANS",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "PLURAL",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 3,
+                        "label": 28
+                    },
+                    "lemma": "loan"
+                },
+                {
+                    "text": "ARE",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "INDICATIVE",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "PRESENT",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 3,
+                        "label": 54
+                    },
+                    "lemma": "be"
+                },
+                {
+                    "text": "AT",
+                    "part_of_speech": {
+                        "tag": "ADP",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 3,
+                        "label": 43
+                    },
+                    "lemma": "AT"
+                },
+                {
+                    "text": "AN",
+                    "part_of_speech": {
+                        "tag": "DET",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 4,
+                        "label": 36
+                    },
+                    "lemma": "AN"
+                },
+                {
+                    "text": "ALL",
+                    "part_of_speech": {
+                        "tag": "DET",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 7,
+                        "label": 16
+                    },
+                    "lemma": "ALL"
+                },
+                {
+                    "text": "TIME",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 9,
+                        "label": 28
+                    },
+                    "lemma": "TIME"
+                },
+                {
+                    "text": "LOW",
+                    "part_of_speech": {
+                        "tag": "ADV",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 9,
+                        "label": 4
+                    },
+                    "lemma": "LOW"
+                },
+                {
+                    "text": "Talk",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 3,
+                        "label": 11
+                    },
+                    "lemma": "Talk"
+                },
+                {
+                    "text": "to",
+                    "part_of_speech": {
+                        "tag": "ADP",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 9,
+                        "label": 43
+                    },
+                    "lemma": "to"
+                },
+                {
+                    "text": "an",
+                    "part_of_speech": {
+                        "tag": "DET",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 12,
+                        "label": 16
+                    },
+                    "lemma": "an"
+                },
+                {
+                    "text": "expert",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 10,
+                        "label": 36
+                    },
+                    "lemma": "expert"
+                },
+                {
+                    "text": "today",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 9,
+                        "label": 57
+                    },
+                    "lemma": "today"
+                },
+                {
+                    "text": "!",
+                    "part_of_speech": {
+                        "tag": "PUNCT",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 3,
+                        "label": 32
+                    },
+                    "lemma": "!"
+                },
+                {
+                    "text": "MORTGA",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 16,
+                        "label": 26
+                    },
+                    "lemma": "MORTGA"
+                },
+                {
+                    "text": "ACL",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 30,
+                        "label": 28
+                    },
+                    "lemma": "ACL"
+                },
+                {
+                    "text": "378086",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 16,
+                        "label": 30
+                    },
+                    "lemma": "378086"
+                },
+                {
+                    "text": "Specialising",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 16,
+                        "label": 59
+                    },
+                    "lemma": "specialise"
+                },
+                {
+                    "text": "in",
+                    "part_of_speech": {
+                        "tag": "ADP",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 18,
+                        "label": 43
+                    },
+                    "lemma": "in"
+                },
+                {
+                    "text": "Home",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 26
+                    },
+                    "lemma": "Home"
+                },
+                {
+                    "text": "&",
+                    "part_of_speech": {
+                        "tag": "CONJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 10
+                    },
+                    "lemma": "&"
+                },
+                {
+                    "text": "Investment",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 12
+                    },
+                    "lemma": "Investment"
+                },
+                {
+                    "text": "Loan",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 26
+                    },
+                    "lemma": "Loan"
+                },
+                {
+                    "text": "Refinance",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 26
+                    },
+                    "lemma": "Refinance"
+                },
+                {
+                    "text": "Options",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 19,
+                        "label": 36
+                    },
+                    "lemma": "Options"
+                },
+                {
+                    "text": "(",
+                    "part_of_speech": {
+                        "tag": "PUNCT",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 32
+                    },
+                    "lemma": "("
+                },
+                {
+                    "text": "Available",
+                    "part_of_speech": {
+                        "tag": "ADJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 28,
+                        "label": 5
+                    },
+                    "lemma": "Available"
+                },
+                {
+                    "text": "NOW",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 6
+                    },
+                    "lemma": "NOW"
+                },
+                {
+                    "text": ")",
+                    "part_of_speech": {
+                        "tag": "PUNCT",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 25,
+                        "label": 32
+                    },
+                    "lemma": ")"
+                },
+                {
+                    "text": "Call",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "IMPERATIVE",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 30,
+                        "label": 54
+                    },
+                    "lemma": "Call"
+                },
+                {
+                    "text": "us",
+                    "part_of_speech": {
+                        "tag": "PRON",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "PLURAL",
+                        "person": "FIRST",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "ACCUSATIVE",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 30,
+                        "label": 18
+                    },
+                    "lemma": "us"
+                },
+                {
+                    "text": "for",
+                    "part_of_speech": {
+                        "tag": "ADP",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 30,
+                        "label": 43
+                    },
+                    "lemma": "for"
+                },
+                {
+                    "text": "smart",
+                    "part_of_speech": {
+                        "tag": "ADJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 34,
+                        "label": 5
+                    },
+                    "lemma": "smart"
+                },
+                {
+                    "text": "information",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 32,
+                        "label": 36
+                    },
+                    "lemma": "information"
+                },
+                {
+                    "text": "regarding",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 34,
+                        "label": 43
+                    },
+                    "lemma": "regard"
+                },
+                {
+                    "text": "tailoring",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 35,
+                        "label": 35
+                    },
+                    "lemma": "tailore"
+                },
+                {
+                    "text": "your",
+                    "part_of_speech": {
+                        "tag": "PRON",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "SECOND",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "GENITIVE",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 39,
+                        "label": 37
+                    },
+                    "lemma": "your"
+                },
+                {
+                    "text": "home",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 39,
+                        "label": 26
+                    },
+                    "lemma": "home"
+                },
+                {
+                    "text": "loan",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 36,
+                        "label": 18
+                    },
+                    "lemma": "loan"
+                },
+                {
+                    "text": "to",
+                    "part_of_speech": {
+                        "tag": "PRT",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 41,
+                        "label": 8
+                    },
+                    "lemma": "to"
+                },
+                {
+                    "text": "suit",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 36,
+                        "label": 61
+                    },
+                    "lemma": "suit"
+                },
+                {
+                    "text": "your",
+                    "part_of_speech": {
+                        "tag": "PRON",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "SECOND",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "GENITIVE",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 44,
+                        "label": 37
+                    },
+                    "lemma": "your"
+                },
+                {
+                    "text": "individual",
+                    "part_of_speech": {
+                        "tag": "ADJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 44,
+                        "label": 5
+                    },
+                    "lemma": "individual"
+                },
+                {
+                    "text": "needs",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "THIRD",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 41,
+                        "label": 18
+                    },
+                    "lemma": "need"
+                },
+                {
+                    "text": "...",
+                    "part_of_speech": {
+                        "tag": "PUNCT",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 30,
+                        "label": 32
+                    },
+                    "lemma": "..."
+                },
+                {
+                    "text": "3227597",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 48,
+                        "label": 31
+                    },
+                    "lemma": "3227597"
+                },
+                {
+                    "text": "-",
+                    "part_of_speech": {
+                        "tag": "X",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 48,
+                        "label": 32
+                    },
+                    "lemma": "-"
+                },
+                {
+                    "text": "9",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 52,
+                        "label": 30
+                    },
+                    "lemma": "9"
+                },
+                {
+                    "text": "Discounted",
+                    "part_of_speech": {
+                        "tag": "ADJ",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 52,
+                        "label": 5
+                    },
+                    "lemma": "Discounted"
+                },
+                {
+                    "text": "Home",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 51,
+                        "label": 26
+                    },
+                    "lemma": "Home"
+                },
+                {
+                    "text": "Loan",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 52,
+                        "label": 26
+                    },
+                    "lemma": "Loan"
+                },
+                {
+                    "text": "rates",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "PLURAL",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 60,
+                        "label": 28
+                    },
+                    "lemma": "rate"
+                },
+                {
+                    "text": "from",
+                    "part_of_speech": {
+                        "tag": "ADP",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 52,
+                        "label": 43
+                    },
+                    "lemma": "from"
+                },
+                {
+                    "text": "3.79",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 55,
+                        "label": 30
+                    },
+                    "lemma": "3.79"
+                },
+                {
+                    "text": "%",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 53,
+                        "label": 36
+                    },
+                    "lemma": "%"
+                },
+                {
+                    "text": "9528",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 57,
+                        "label": 30
+                    },
+                    "lemma": "9528"
+                },
+                {
+                    "text": "1420",
+                    "part_of_speech": {
+                        "tag": "NUM",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 55,
+                        "label": 57
+                    },
+                    "lemma": "1420"
+                },
+                {
+                    "text": "Mark",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 59,
+                        "label": 26
+                    },
+                    "lemma": "Mark"
+                },
+                {
+                    "text": "Devenny",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 52,
+                        "label": 15
+                    },
+                    "lemma": "Devenny"
+                },
+                {
+                    "text": "loans@selectmortgages.com.au",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "INDICATIVE",
+                        "number": "SINGULAR",
+                        "person": "THIRD",
+                        "tense": "PRESENT",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 60,
+                        "label": 54
+                    },
+                    "lemma": "loans@selectmortgages.com.au"
+                },
+                {
+                    "text": "Concions",
+                    "part_of_speech": {
+                        "tag": "NOUN",
+                        "mood": "MOOD_UNKNOWN",
+                        "number": "SINGULAR",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "TENSE_UNKNOWN",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 62,
+                        "label": 28
+                    },
+                    "lemma": "Concions"
+                },
+                {
+                    "text": "apply",
+                    "part_of_speech": {
+                        "tag": "VERB",
+                        "mood": "INDICATIVE",
+                        "number": "NUMBER_UNKNOWN",
+                        "person": "PERSON_UNKNOWN",
+                        "tense": "PRESENT",
+                        "aspect": "ASPECT_UNKNOWN",
+                        "case": "CASE_UNKNOWN",
+                        "form": "FORM_UNKNOWN",
+                        "gender": "GENDER_UNKNOWN",
+                        "proper": "PROPER_UNKNOWN",
+                        "reciprocity": "RECIPROCITY_UNKNOWN",
+                        "voice": "VOICE_UNKNOWN"
+                    },
+                    "dependency_edge": {
+                        "head_token_index": 60,
+                        "label": 11
+                    },
+                    "lemma": "apply"
+                }
+            ],
+            "sentences_data": [
+                "SELECT HOME LOANS ARE AT AN ALL TIME LOW Talk to an expert today!",
+                "MORTGA ACL 378086 Specialising in Home & Investment Loan Refinance Options (Available NOW) Call us for smart information regarding tailoring your home loan to suit your individual needs...",
+                "3227597-9 Discounted Home Loan rates from 3.79% 9528 1420 Mark Devenny loans@selectmortgages.com.au Concions apply"
+            ]
+        },
+        "analyze_entity_sentiment": [
+            {
+                "mentions_data": [
+                    {
+                        "text": "HOME LOANS",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.0,
+                            "score": 0.0
+                        }
+                    }
+                ],
+                "name": "HOME LOANS",
+                "type": "OTHER",
+                "salience": 0.40733256936073303
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "expert",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.0,
+                            "score": 0.0
+                        }
+                    }
+                ],
+                "name": "expert",
+                "type": "PERSON",
+                "salience": 0.12901678681373596
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "ALL TIME LOW",
+                        "type": "PERSON",
+                        "sentiment": {
+                            "magnitude": 0.10000000149011612,
+                            "score": -0.10000000149011612
+                        }
+                    }
+                ],
+                "name": "ALL TIME LOW",
+                "type": "OTHER",
+                "salience": 0.07745549082756042
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Home",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.0,
+                            "score": 0.0
+                        }
+                    }
+                ],
+                "name": "Home",
+                "type": "OTHER",
+                "salience": 0.05719175934791565
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "home loan",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.20000000298023224,
+                            "score": 0.20000000298023224
+                        }
+                    }
+                ],
+                "name": "home loan",
+                "type": "OTHER",
+                "salience": 0.05318315327167511
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Investment Loan Refinance Options",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.30000001192092896,
+                            "score": 0.30000001192092896
+                        }
+                    }
+                ],
+                "name": "Investment Loan Refinance Options",
+                "type": "OTHER",
+                "salience": 0.0433601476252079
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "NOW",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.10000000149011612,
+                            "score": 0.10000000149011612
+                        }
+                    }
+                ],
+                "name": "NOW",
+                "type": "OTHER",
+                "salience": 0.0433601476252079
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "ACL",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.0,
+                            "score": 0.0
+                        }
+                    }
+                ],
+                "name": "ACL",
+                "type": "OTHER",
+                "salience": 0.042836230248212814
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "information",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.699999988079071,
+                            "score": 0.699999988079071
+                        }
+                    }
+                ],
+                "name": "information",
+                "type": "OTHER",
+                "salience": 0.039821408689022064
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "MORTGA",
+                        "type": "PERSON",
+                        "sentiment": {
+                            "magnitude": 0.10000000149011612,
+                            "score": 0.10000000149011612
+                        }
+                    }
+                ],
+                "name": "MORTGA",
+                "type": "ORGANIZATION",
+                "salience": 0.03759019449353218
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Home Loan rates",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.20000000298023224,
+                            "score": 0.20000000298023224
+                        }
+                    }
+                ],
+                "name": "Home Loan rates",
+                "type": "OTHER",
+                "salience": 0.029938140884041786
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "needs",
+                        "type": "LOCATION",
+                        "sentiment": {
+                            "magnitude": 0.0,
+                            "score": 0.0
+                        }
+                    }
+                ],
+                "name": "needs",
+                "type": "OTHER",
+                "salience": 0.013249066658318043
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Concions",
+                        "type": "PERSON",
+                        "sentiment": {
+                            "magnitude": 0.10000000149011612,
+                            "score": 0.10000000149011612
+                        }
+                    }
+                ],
+                "name": "Concions",
+                "type": "OTHER",
+                "salience": 0.013225961476564407
+            },
+            {
+                "mentions_data": [
+                    {
+                        "text": "Mark Devenny",
+                        "type": "PERSON",
+                        "sentiment": {
+                            "magnitude": 0.10000000149011612,
+                            "score": -0.10000000149011612
+                        }
+                    }
+                ],
+                "name": "Mark Devenny",
+                "type": "PERSON",
+                "salience": 0.012438937090337276
+            }
+        ]
+    }
+]

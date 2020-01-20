@@ -1,0 +1,761 @@
+<!-- header section strt-->
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+  </div>
+</div>
+<!-- header section End-->
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card shadow">
+        <div class="card-body">
+          <!-- tab start -->
+          <ngb-tabset>
+            <!-- descriptiopn start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div><b>Description</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin:20px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h4>Image Section</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="row jugadImages" *ngIf="fileName == 'vcredit_repair_australia'"
+                          style="margin: 26px 0 0 0;">
+                          <div class="col-md-6">
+                            <img src="./assets/adv_Image/vcredit_repair_australiaout2_frames.jpg"
+                              style="max-width: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="./assets/adv_Image/vcredit_repair_australiaout3_frames.jpg"
+                              style="max-width: 100%;">
+                          </div>
+                        </div>
+                        <div class="row jugadImages" *ngIf="fileName == 'vcredit_repair_australia'"
+                          style="margin: 26px 0 0 0;">
+                          <div class="col-md-6">
+                            <img src="./assets/adv_Image/vcredit_repair_australiaout5_frames.jpg"
+                              style="max-width: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                            <img src="./assets/adv_Image/vcredit_repair_australiaout6_frames.jpg"
+                              style="max-width: 100%;">
+                          </div>
+                        </div>
+                        <div class="row jugadImages" *ngIf="fileName == 'vcredit_repair_australia'"
+                          style="margin: 26px 0 0 0;">
+                          <div class="col-md-6">
+                            <img src="./assets/adv_Image/vcredit_repair_australiaout7_frames.jpg"
+                              style="max-width: 100%;">
+                          </div>
+                          <div class="col-md-6">
+                              <img src="./assets/adv_Image/vcredit_repair_australiaout4_frames.jpg"
+                                style="max-width: 100%;">
+                            </div>
+                        </div>
+
+                        <span *ngIf="fileName != 'vcredit_repair_australia'">
+                          <img src="./assets/adv_Image/{{fileName}}.jpg" style="max-width: 54%;">
+                        </span>
+                        <span *ngIf="fileName != 'vcredit_repair_australia'">
+                          <img src="./assets/adv_Image/{{fileName}}.png" style="max-width: 54%;">
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12" style="margin:20px 0 0 0;">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h4>Video Section</h4>
+                      </div>
+                      <div class="card-body">
+                        <video width="100%" height="500" controls>
+                          <source src="./assets/adv_video/{{fileName}}.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12" style="margin:20px 0 0 0;">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h4>Audio Section</h4>
+                      </div>
+                      <div class="card-body">
+                        <audio controls style="width:100%">
+                          <source src="./assets/adv_audio/{{fileName}}.flac" type="audio/mpeg">
+                        </audio>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </ng-template>
+            </ngb-tab>
+            <!-- descriptiopn End -->
+
+            <!-- breaches start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div><b>Breaches</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3>Breaches</h3>
+                          </div>
+                          <div class="col-md-2"></div>
+                          <div class="col-md-3">
+                            <select class="form-control" style="height: 44px;" (change)=ChangeBreachesData($event)>
+                              <option value="1">All</option>
+                              <option value="2">Specific Breaches</option>
+                              <option value="3">Principle Breaches</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid [altrows]="true" [source]="dataAdapter" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" (onRowclick)="RowclickBreachtable($event)"
+                          [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- breaches End -->
+
+            <!-- Image facial expression start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="ImageFacialExpression();"><b>Image Facial Expression</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h5>Image Facial emotions</h5>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid2 [altrows]="true" [source]="dataAdapter2" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns2" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" (onRowclick)="RowclickImageFacial($event)"
+                          [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- Image facial expression end -->
+
+            <!-- image document labels start-->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="ImageFacialExpression();"><b>Image Document Labels</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Logo Annotations</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter3" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns3" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Label Annotations</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid4 [altrows]="true" [source]="dataAdapter4" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns4" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="margin: 30px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Text Annotations</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid5 [altrows]="true" [source]="dataAdapter5" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns5" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" (onRowclick)="RowclickTextAnnotationData($event)"
+                          [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </ng-template>
+            </ngb-tab>
+            <!-- image document labels end -->
+
+            <!-- Nlp labels start-->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="nlpDocument();"><b>NLP Document</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Sentiment_ORC</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter6" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns6" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Entities</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter7" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns7" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Sentiment_Audio</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter15" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns15" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Entities</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter16" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns16" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- nlp document labels end -->
+
+            <!-- Audoio transcritption start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="AudioTransit();"><b>Audio Transcription</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Sentiment</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter8" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns8" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" (onRowclick)="RowclickAudioTransitData($event)" [filterable]="true"
+                          [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- Audoio transcritption End -->
+
+
+            <!-- video intelligence start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="videoIntelligence();"><b>Video Intelligence</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Segment</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter9" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns9" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Frames</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter10" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns10" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Video Detect</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter11" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns11" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Speech Transcription</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter12" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns12" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- video ingtelligence end -->
+
+            <!-- text intelligence start -->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="TextAnootationData();"><b>Text</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Text Readibility</h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter13" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns13" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="margin: 11px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h3>Text Coverage </h3>
+                      </div>
+
+                      <div class="card-body">
+                        <table class="table table-bordered">
+                          <tr>
+                            <th><b>Image Area</b>:</th>
+                            <td><b>{{dataTextcoverage.img_area}}</b></td>
+                            <th><b>Text Coverage</b>:</th>
+                            <td>
+                              <b>{{dataTextcoverage.text_coverage?(dataTextcoverage.text_coverage).toFixed(4):'0'}}</b>
+                            </td>
+                            <th><b>Word Area</b>:</th>
+                            <td><b>{{dataTextcoverage.word_area}}</b></td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div class="card-header">
+                        <h3>Text Detail </h3>
+                      </div>
+                      <div class="card-body">
+                        <jqxGrid #myGrid3 [altrows]="true" [source]="dataAdapter14" width='100%' height='500px'
+                          [theme]="'material'" [columns]="columns14" [columnsresize]="true" [pageable]="true"
+                          [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+                        </jqxGrid>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- text ingtelligence end -->
+
+            <!-- maps start-->
+            <ngb-tab>
+              <ng-template ngbTabTitle>
+                <div (click)="mapDataCreditLic()"><b>Map</b></div>
+              </ng-template>
+              <ng-template ngbTabContent>
+                <div class="row" style="margin:20px 0 0 0;">
+                  <div class="col-xl-12">
+                    <div class="card shadow">
+                      <div class="card-header">
+                        <h5>Map</h5>
+                      </div>
+
+                      <div class="card-body">
+                        <agm-map [zoom]="7" [latitude]="lat" [longitude]="lng">
+                          <agm-marker [latitude]="lat" [longitude]="lng">
+                            <agm-info-window [disableAutoPan]="false" #infoWindow>
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <h4>Add: {{formattedAddressvalue?formattedAddressvalue:''}}</h4>
+                                </div>
+                                <div class="col-md-5">
+                                  <select class="form-control" style="height: 40px;" (change)=changeViewInfo($event)>
+                                    <option value="tableview">Table View</option>
+                                    <option value="weekly">Weekly Income</option>
+                                    <option value="demographics">Demographics Chart</option>
+                                    <option value="employment">Employment Chart</option>
+                                    <option value="indegious">Indigenous Chart</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <!-- Table view data -->
+                              <div [hidden]="!tableview">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <span *ngIf="WeeklyData">
+                                      <h4>Weekly Income:</h4>
+                                      <table class="table table-bordered table-hover BackColorTable">
+                                        <tr>
+                                          <th>$799</th>
+                                          <td>{{ fixedAfterDot(WeeklyData["799_pct"]*100) }}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>$800-$1499</th>
+                                          <td>{{fixedAfterDot(WeeklyData["800_1499_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>$1500-$2999</th>
+                                          <td>{{fixedAfterDot(WeeklyData["1500_2999_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>$3000+</th>
+                                          <td>{{fixedAfterDot(WeeklyData["3000_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>NA/NS</th>
+                                          <td>{{fixedAfterDot(WeeklyData["NA_NS_pct"]*100)}}%</td>
+                                        </tr>
+                                      </table>
+                                    </span>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <span *ngIf="nswData">
+                                      <h4>Age Demographics:</h4>
+                                      <table class="table table-bordered table-hover BackColorTable">
+                                        <tr>
+                                          <th>0y-19y</th>
+                                          <td>{{ fixedAfterDot(nswData["0_19_pct"]*100) }}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>20y-39y</th>
+                                          <td>{{fixedAfterDot(nswData["20_39_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>40y-59y</th>
+                                          <td>{{fixedAfterDot(nswData["40_59_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>60y+</th>
+                                          <td>{{fixedAfterDot(nswData["60_plus_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>-</th>
+                                          <td>-</td>
+                                        </tr>
+                                      </table>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <span *ngIf="labourData">
+                                      <h4>Employment Status:</h4>
+                                      <table class="table table-bordered table-hover BackColorTable">
+                                        <tr>
+                                          <th>Employed Part Away</th>
+                                          <td>{{ fixedAfterDot(labourData["Employed_full_part_away_pct"]*100) }}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>Unemployed</th>
+                                          <td>{{fixedAfterDot(labourData["Unemployed_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>NS NA NILA</th>
+                                          <td>{{fixedAfterDot(labourData["NS_NA_NILA_pct"]*100)}}%</td>
+                                        </tr>
+                                      </table>
+                                    </span>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <span *ngIf="IndegiosData">
+                                      <h4>Indigenous Population:</h4>
+                                      <table class="table table-bordered table-hover BackColorTable">
+                                        <tr>
+                                          <th>Non-Indigenous</th>
+                                          <td>{{ fixedAfterDot(IndegiosData["Non_Indigenous_pct"]*100) }}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>AB TI Both</th>
+                                          <td>{{fixedAfterDot(IndegiosData["AB_TI_Both_pct"]*100)}}%</td>
+                                        </tr>
+                                        <tr>
+                                          <th>-</th>
+                                          <td>-</td>
+                                        </tr>
+                                      </table>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- table view end -->
+
+                              <div [hidden]="!weeklychart">
+                                <div id="charts" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                              </div>
+                            </agm-info-window>
+                          </agm-marker>
+                        </agm-map>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-12">
+                    <div class="card shadow" style="margin: 30px 0 0 0;">
+                      <div class="card-header">
+                        <!-- <h5>Indigenous Population</h5> -->
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4>{{mapTitle}}</h4>
+                          </div>
+                          <div class="col-md-3"></div>
+                          <div class="col-md-3">
+                            <select class="form-control" style="height: 44px;" (change)=indigiousmap($event)>
+                              <option value="indegious">Indigenous Population</option>
+                              <option value="ageTable">Age Demographics</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <agm-map [zoom]="15" [latitude]="lat" [longitude]="lng" [fitBounds]="true">
+                          <agm-marker *ngFor="let indi of indigiousMarker; let i = index" [latitude]="indi.indigLat"
+                            [longitude]="indi.indigLng" [agmFitBounds]="true"
+                            [iconUrl]="{ url: './assets/img/brand/map.png', scaledSize: { width: 45, height: 65 }, labelOrigin:{x:23,y:25}}"
+                            [label]="{color: 'black', fontWeight: 'bold', fontSize: '10px',  text: indi.on_Indigenous_pct?indi.on_Indigenous_pct:indi['60_plus_pct']}"
+                            (mouseOver)="mouseOver(infoWindowsecound)" (mouseOut)="onMouseOut(infoWindowsecound)">
+
+                            <agm-info-window [disableAutoPan]="false" #infoWindowsecound>
+                              <table class="table table-bordered table-hover BackColorTable">
+                                <tr>
+                                  <th>Add.</th>
+                                  <td>{{indi.formattedAddress?indi.formattedAddress:'' }}</td>
+                                </tr>
+                                <tr>
+                                  <th>postcode</th>
+                                  <td>{{indi.postcodes?indi.postcodes:''}}</td>
+                                </tr>
+                                <tr *ngIf="mapTitle == 'Indigenous Population'">
+                                  <th>Value</th>
+                                  <td>{{indi.on_Indigenous_pct?indi.on_Indigenous_pct:'0'}}</td>
+                                </tr>
+                                <tr *ngIf="mapTitle == 'Age Demographics'">
+                                  <th>0-19%</th>
+                                  <td>{{indi['0_19_pct']?indi['0_19_pct']:'0'}}%</td>
+                                </tr>
+                                <tr *ngIf="mapTitle == 'Age Demographics'">
+                                  <th>20-39%</th>
+                                  <td>{{indi['20_39_pct']?indi['20_39_pct']:'0'}}%</td>
+                                </tr>
+                                <tr *ngIf="mapTitle == 'Age Demographics'">
+                                  <th>40-59%</th>
+                                  <td>{{indi['40_59_pct']?indi['40_59_pct']:'0'}}%</td>
+                                </tr>
+                                <tr *ngIf="mapTitle == 'Age Demographics'">
+                                  <th>60+ %</th>
+                                  <td>{{indi['60_plus_pct']?indi['60_plus_pct']:'0'}}%</td>
+                                </tr>
+                              </table>
+                            </agm-info-window>
+                          </agm-marker>
+
+
+                        </agm-map>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ngb-tab>
+            <!-- maps end -->
+
+
+          </ngb-tabset>
+          <!-- tab end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button style="visibility: hidden;" #click_model (click)="openModel(content)"></button>
+<ng-template #content let-c="close" let-d="dismiss" class="modal fade">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Breach Detail</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')"><span
+        aria-hidden="true">&times;</span> </button>
+  </div>
+  <div class="modal-body">
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Entity Name</th>
+          <td>{{rowClickData.entity_name}}</td>
+        </tr>
+        <tr>
+          <th>Product Type</th>
+          <td>{{rowClickData.product_type}}</td>
+        </tr>
+        <tr>
+          <th>Medium Type</th>
+          <td>{{rowClickData.medium_type}}</td>
+        </tr>
+        <tr>
+          <th>Rule Id</th>
+          <td>{{rowClickData.rule_id}}</td>
+        </tr>
+        <tr>
+          <th>Breach Word</th>
+          <p style="word-break: break-all;">{{rowClickData.hit_value}}</p>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-template>
+
+<button style="visibility: hidden;" #click_model_Text_anootation (click)="openModelTextannotation(contents)"></button>
+<ng-template #contents let-c="close" let-d="dismiss" class="modal fade">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Text Annotation</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')"><span
+        aria-hidden="true">&times;</span> </button>
+  </div>
+  <div class="modal-body">
+    <p>{{textAnnotationRowClickData.description}}</p>
+  </div>
+</ng-template>
+
+<button style="visibility: hidden;" #click_model_Audio_Annotation
+  (click)="openModelAudioannotation(contentss)"></button>
+<ng-template #contentss let-c="close" let-d="dismiss" class="modal fade">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Audio Annotation</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')"><span
+        aria-hidden="true">&times;</span> </button>
+  </div>
+  <div class="modal-body">
+    <div class="table-resposive">
+      <p><b>Transcript:</b> {{AudioAnnotationRowClickData.transcript}}</p>
+      <p><b>Confidence:</b> {{AudioAnnotationRowClickData.confidence}}</p>
+    </div>
+  </div>
+</ng-template>
+
+<button style="visibility: hidden;" #click_model_text_coverage_Annotation
+  (click)="openModeltextAnnotations(contentsss)"></button>
+<ng-template #contentsss let-c="close" let-d="dismiss" class="modal fade">
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Text Coverage Annotation</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')"><span
+        aria-hidden="true">&times;</span> </button>
+  </div>
+  <div class="modal-body">
+    <div class="table-resposive">
+      <table class="table ">
+        <tbody>
+          <!-- <tr>
+              <th>File Name:</th>
+              <td >{{textCoverageModelData.file_name}}</td>
+            </tr> -->
+          <tr>
+            <th>Image Area:</th>
+            <td>{{textCoverageModelData.img_area}}</td>
+          </tr>
+          <tr>
+            <th>text_coverage:</th>
+            <td>{{(textCoverageModelData.text_coverage).toFixed(2)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-template>

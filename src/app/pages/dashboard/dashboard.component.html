@@ -1,0 +1,266 @@
+<!-- header section strt-->
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+
+    <div class="header-body">
+      <div class="row">
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Advertise')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Advertisement</h5>
+                  <span class="h2 font-weight-bold mb-0">{{tableDatalength}}</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Files')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Files</h5>
+                  <span class="h2 font-weight-bold mb-0">250</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Breaches')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Breaches</h5>
+                  <span class="h2 font-weight-bold mb-0">{{tableBreachesDatalength? tableBreachesDatalength:'0'}}</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top:24px;">
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Images')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Images</h5>
+                  <span class="h2 font-weight-bold mb-0">210</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-danger text-white rounded-circle shadow">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Audio')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Audio</h5>
+                  <span class="h2 font-weight-bold mb-0">15</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="card card-stats mb-4 mb-xl-0">
+            <div class="card-body">
+              <div class="row mouse_pointer" (click)="onClickWidget('Video')">
+                <div class="col">
+                  <h5 class="card-title text-uppercase text-muted mb-0">Video</h5>
+                  <span class="h2 font-weight-bold mb-0">20</span>
+                </div>
+                <div class="col-auto">
+                  <div class="icon icon-shape bg-yellow text-white rounded-circle shadow">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- header section End-->
+
+<!-- Chart section start -->
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-4">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="advType('bar');"><i class="fas fa-chart-bar"></i></button>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="advType('pie');"><i class="fas fa-chart-pie"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" [style.display]="advChartshow">
+          <div id="Advertisement" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+        <div class="card-body" [style.display]="advChartshowpie">
+          <div id="pieAdvertisementChart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col-xl-4">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="pieProduct_serviceType('bar');"><i class="fas fa-chart-bar"></i></button>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="pieProduct_serviceType('pie');"><i class="fas fa-chart-pie"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" [style.display]="productChartshow">
+          <div id="Product_service" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+        <div class="card-body" [style.display]="productChartshowpie">
+          <div id="pieProduct_service" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4">
+      <div class="card shadow">
+        <div class="card-header">
+         <div class="row">
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="EntityNamePietype('pie');"><i class="fas fa-chart-bar"></i></button>
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-primary" (click)="EntityNamePietype('bar');"><i class="fas fa-chart-pie"></i></button>
+            </div>
+          </div>  
+        </div>
+        <div class="card-body" [style.display]="EntityTypeChart">
+          <div id="entity_type" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+
+        <div class="card-body" [style.display]="PieEntityTypeChart">
+          <div id="pieEntity_type" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-xl-12">
+      <div class="card shadow">
+         <div class="card-header">
+          <div class="row">
+            <div class="col-md-1">
+              <button class="btn btn-primary" (click)="PIeEntityName('bar');"><i class="fas fa-chart-bar"></i></button>
+            </div>
+            <div class="col-md-1">
+              <button class="btn btn-primary" (click)="PIeEntityName('pie');"><i class="fas fa-chart-pie"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card-body" [style.display]="EntityvChartshow">
+          <div id="entity_name" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+        <div class="card-body" [style.display]="PieEntityChartshowpie">
+          <div id="pie_entity_name" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Chart section End -->
+
+<!-- table section start -->
+<!-- advertisment table start -->
+<div class="container-fluid" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="mb-0">Advertisement</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <jqxGrid #myGrid [source]="dataAdapter" width='100%' height='600px' [theme]="'material'" [columns]="columns"  [altrows]="true" [columnsresize]="true"
+            [pageable]="true" [sortable]="true" [filterable]="true" (onRowclick)="Rowclick($event)"
+            [columnsreorder]="true" [autoshowfiltericon]="true">
+          </jqxGrid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- advertisment table end -->
+<!-- breaches table start-->
+<div class="container-fluid" style="margin-top: 20px;">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3 class="mb-0">Breaches</h3>
+            </div>
+             <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <select class="form-control" style="height: 44px;" (change)=ChangeBreachesData($event)>
+                    <option value="1">All</option>
+                    <option value="2">Specific Breaches</option>
+                    <option value="3">Principle Breaches</option>
+                </select>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <jqxGrid #myGrid [source]="dataAdapterBreaches" [altrows]="true" width='100%' height='600px' [theme]="'material'" [columns]="columnsBreaches" [columnsresize]="true"
+            [pageable]="true" [sortable]="true" [filterable]="true" [columnsreorder]="true" [autoshowfiltericon]="true">
+          </jqxGrid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- breaches table end -->
+<!-- table section End -->
